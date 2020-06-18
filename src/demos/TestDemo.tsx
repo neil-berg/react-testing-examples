@@ -1,6 +1,19 @@
 import * as React from 'react';
 
-import { Code, DemoContainer, Title } from '../components';
+import {
+  Code,
+  DemoCode,
+  DemoComponent,
+  DemoContainer,
+  DemoInnerContainer,
+  Description,
+  Title,
+} from '../components';
+
+const data = {
+  title: 'Test Demo Title',
+  description: 'Looking at a scneario where we dot dot dot',
+};
 
 export const TestDemo = () => {
   const demoComp = <button>Press Me</button>;
@@ -14,12 +27,13 @@ const button = component.getByText(/some text/)
   const demoCode = <Code>{code}</Code>;
 
   return (
-    <>
-      <Title text={'hhhhhhhh'} />
-      <DemoContainer>
-        {demoComp}
-        {demoCode}
-      </DemoContainer>
-    </>
+    <DemoContainer>
+      <Title text={data.title} />
+      <Description text={data.description} />
+      <DemoInnerContainer>
+        <DemoComponent>{demoComp}</DemoComponent>
+        <DemoCode>{demoCode}</DemoCode>
+      </DemoInnerContainer>
+    </DemoContainer>
   );
 };

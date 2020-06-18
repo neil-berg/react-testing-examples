@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 interface DemoContainerProps {
-  children: (JSX.Element | string)[];
+  children: JSX.Element[];
 }
 
 export const DemoContainer = (props: DemoContainerProps) => (
@@ -10,10 +10,5 @@ export const DemoContainer = (props: DemoContainerProps) => (
 );
 
 const StyledDemoContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media screen and (min-width: 650px) {
-    flex-direction: row;
-  }
+  padding: 0 48px;
 `;
