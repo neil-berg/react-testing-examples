@@ -12,8 +12,4 @@ export const DemoInnerContainer = (props: DemoInnerContainerProps) => (
 const StyledDemoInnerContainer = styled.div`
   display: flex;
   flex-direction: column;
-
-  /* @media screen and (min-width: 650px) {
-    flex-direction: row;
-  } */
 `;

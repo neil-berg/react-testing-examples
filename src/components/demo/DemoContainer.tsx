@@ -10,5 +10,11 @@ export const DemoContainer = (props: DemoContainerProps) => (
 );
 
 const StyledDemoContainer = styled.div`
-  padding: 0 48px;
+  padding: 0 24px;
+  margin: 0 auto;
+  max-width: 800px;
+
+  @media screen and (min-width: 650px) {
+    padding: 0 48px;
+  }
 `;
