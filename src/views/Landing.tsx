@@ -1,11 +1,12 @@
 import * as React from 'react';
 
-import { DemoHoverEffects } from '../demos';
+import { DemoAppearance, DemoHoverEffects } from '../demos';
 
 export const Landing = () => {
   return (
     <>
       <DemoHoverEffects />
+      <DemoAppearance />
     </>
   );
 };
